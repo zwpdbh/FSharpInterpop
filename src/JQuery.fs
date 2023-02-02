@@ -53,5 +53,6 @@ module JQueryV2 =
 
 
 module ObjectLiterals = 
+    // TBD: Working with object literals
     let demo () = 
         0

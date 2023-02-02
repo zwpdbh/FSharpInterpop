@@ -5,6 +5,7 @@ open Fable.Core.JsInterop
 
 open FableDemo
 
+//Now, take a closer look at the function isUndefined . It has one paramter called x of a generic type 'a . The function returns bool . Then notice that $0 in the emit expression , that is a placeholder of whatever value you pass to the function in the place of parameter x . It has the number 0 because the parameters are 0-indexed and therefore the first parameter (in this case x ) will have the index 0.
 
 [<Emit("$0 === undefined")>]
 let isUndefined (x: 'a) : bool = jsNative
